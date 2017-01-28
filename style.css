@@ -1,7 +1,7 @@
 body {
     font: 20px "Montserrat", sans-serif;
     line-height: 1.8;
-    color: #F5F6F7;
+    color: #FFFFFF;
     padding-top: 75px;
 }
 
@@ -17,13 +17,12 @@ p {
     background-image: url("images/background_alt.jpg");
     background-attachment: fixed;
     background-position: right top;
-    background-color: #383737;
-    color: #FFFFFF;
+    background-color:  #555555;
 }
 
 .bg-2 {
-    background-color: #474E5D;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color:   #555555;
 }
 
 .bg-3 {
@@ -48,8 +47,21 @@ p {
     border-radius: 0px;
     margin-bottom: 0px;
     font-size: 12px;
+    background-color: #283E4A;
 }
-
-.navbar-nav li a:hover {
-    color: #1abc9c !important;
+.navbar-default .navbar-brand {
+  color: #E1E9EE;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #4875B4;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #E1E9EE;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color:  #4875B4;
+  background-color: transparent;
 }
