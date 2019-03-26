@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { Component }  from 'react'
 import './Header.scss'
 
-export default class Header extends React.Component {
+export default class Header extends Component {
     render() {
         return (
             <div className="nav-bar">
                 <div className="container">
-                    <div className="row align-items-center">
+                    <div className="row">
                         <div className="col">
                             <div className="logo">
                                 <h1>Amar Jasarbasic</h1>
@@ -16,7 +16,7 @@ export default class Header extends React.Component {
                             <div className="options">
                                 <a href="/">
                                     <div className="resume-link">
-                                        View Resume <i class="fas fa-chevron-right"></i>
+                                        View Resume <i className="fas fa-chevron-right"></i>
                                     </div>
                                 </a>
                                 <a href="/">Projects</a>
