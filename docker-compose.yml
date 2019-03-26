@@ -1,9 +1,0 @@
-version: '3'
-
-services:
-  website:
-    build: ./front-end
-    volumes:
-      - ./front-end/:/usr/local/apache2/htdocs/
-    ports:
-      - 8080:80
