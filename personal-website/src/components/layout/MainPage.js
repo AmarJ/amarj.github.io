@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './MainPage.css'
-import art from '../../imgs/2.gif';
+import art from '../../imgs/all.png';
 
 export default class MainPage extends Component {
     render() {
