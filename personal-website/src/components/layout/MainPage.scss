@@ -1,13 +1,15 @@
 .main-wrapper {
     width: 80.75%;
-    height: 100vh;
+    height: calc(100vh - 150px);
     margin: 0 auto;
-    margin-top: 10rem;
+    // background: yellow;
 }
 
 .banner-content {
     color: #3C3B48;
     text-align: left;
+    margin-top: 4rem;
+    // background: blue;
 }
   
 .banner-content h1 {
@@ -17,8 +19,8 @@
 }
 
 .banner-content p {
-    font-size: 25px;
-    margin-top: 1rem;
+    font-size: 22px;
+    margin-top: 2rem;
 }
 
 @media (max-width: 800px) {
@@ -38,7 +40,8 @@
     margin-left:5px;
 }
  
-.gif-load {
+.me {
+
     margin-left: 10%;
     width: 80%;
 }

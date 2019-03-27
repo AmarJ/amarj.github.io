@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './MainPage.scss'
-import art from '../../imgs/all.png';
+import art from '../../imgs/me.png';
 
 export default class MainPage extends Component {
     render() {
@@ -21,9 +21,9 @@ export default class MainPage extends Component {
                                 <button type="button" className="btn btn-outline-primary">Send me a message <i className="fas fa-envelope mail-icon"></i></button>
                             </div>
                         </div>
-                        {/* <div className="col"> */}
-                            {/* <img src={art} className='gif-load' alt="loading..." /> */}
-                        {/* </div> */}
+                        <div className="col">
+                            <img src={art} className='me' alt="loading..." />
+                        </div>
                     </div>
                 </div>
             </div>
