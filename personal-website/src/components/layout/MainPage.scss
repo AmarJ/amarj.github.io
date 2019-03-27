@@ -1,0 +1,48 @@
+.main-wrapper {
+    width: 80.75%;
+    height: 100vh;
+    margin: 0 auto;
+    margin-top: 10rem;
+}
+
+.banner-content {
+    color: #3C3B48;
+    text-align: left;
+}
+  
+.banner-content h1 {
+    font-size: 45px;
+    color: #3C3B48;
+    font-weight: 600;
+}
+
+.banner-content p {
+    font-size: 25px;
+    margin-top: 1rem;
+}
+
+@media (max-width: 800px) {
+    .banner-content h1 {
+        font-size: 28px;
+        color: #3C3B48;
+        font-weight: 600;
+    }
+    
+    .banner-content p {
+        font-size: 18px;
+        margin-top: 1rem;
+    }
+}
+
+.mail-icon {
+    margin-left:5px;
+}
+ 
+.gif-load {
+    margin-left: 10%;
+    width: 80%;
+}
+
+#main {
+    transition: margin-top .5s;
+}

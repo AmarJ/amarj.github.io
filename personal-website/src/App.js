@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.scss';
 import "shards-ui/dist/css/shards.min.css"
 import Header from './components/layout/Header';

@@ -1,10 +1,22 @@
 .nav-bar {
     padding-top: 40px;
     padding-bottom: 40px;
+    width: 80.75%;
+    margin: 0 auto;
+}
+
+.nav-menu {
+    width: 100%;
+    z-index: 1;
+    background-color: #1C2229;
+    position: fixed;
+    margin-bottom: 0px;
+    transition: 0.5s;
 }
 
 .logo {
     float: left;
+    text-align: left;
 }
 
 .logo h1 {
@@ -13,6 +25,47 @@
     font-family: Helvetica-Neue-STD-65;
     letter-spacing: 1px;
     font-weight: bold;
+}
+
+.menu-icon {
+    color: black;
+    margin-top: 9px;
+    font-size: 20px;
+}
+
+.menu-icon:hover {
+    color: #4895F0;
+    cursor: pointer;
+}
+
+.full-options {
+    margin-top: 15px;
+    float: right;
+}
+
+.full-options a {
+    margin-left: 20px;
+    display: block;
+    float: right;
+    color: #1C2229;
+}
+
+.full-options a:hover {
+    cursor: pointer;
+    color: #B0CFF8;
+    text-decoration: none;
+}
+
+.short-name { display: none; }
+.short-options { display: none; }
+
+// Display AJ instead of Amar Jasarbasic
+@media (max-width: 1200px) {
+    .short-name { display: inline-block; }
+    .full-name { display: none; }
+
+    .short-options { float: right; display: block; margin-right: 20px; }
+    .full-options { display: none; }
 }
 
 .resume-link {
@@ -27,19 +80,3 @@
     text-decoration: none;
 }
 
-.options {
-    float: right;
-}
-
-.options a {
-    margin-left: 20px;
-    display: block;
-    float: right;
-    color: #1C2229;
-}
-
-.options a:hover {
-    cursor: pointer;
-    color: #B0CFF8;
-    text-decoration: none;
-}
