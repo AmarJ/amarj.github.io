@@ -1,68 +1,79 @@
 .main-wrapper {
-    width: 80.75%;
-    height: calc(100vh - 150px);
-    margin: 0 auto;
-    // background: yellow;
+  width: 80.75%;
+  height: calc(100vh - 150px);
+  margin: 0 auto;
+  // background: yellow;
 }
 
 .banner-content {
-    color: #3C3B48;
-    text-align: left;
-    margin-top: 4rem;
-    margin-bottom: 5rem;
-    // background: blue;
+  color: #3c3b48;
+  text-align: left;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  // background: blue;
 }
-  
+
 .banner-content h1 {
-    font-size: 42px;
-    color: #3C3B48;
-    font-weight: 600;
+  font-size: 42px;
+  color: #3c3b48;
+  font-weight: 600;
 }
 
 .banner-content p {
-    font-size: 22px;
-    color: #3C3B48;
-    margin-top: 2rem;
+  font-size: 22px;
+  color: #3c3b48;
+  margin-top: 2rem;
 }
 
 @media (max-width: 800px) {
-    .banner-content {
-        margin: 0px;
+  .banner-content {
+    margin: 0px;
+  }
 
-    }
+  .banner-content h1 {
+    font-size: 28px;
+    color: #3c3b48;
+    font-weight: 600;
+  }
 
-    .banner-content h1 {
-        font-size: 28px;
-        color: #3C3B48;
-        font-weight: 600;
-    }
-    
-    .banner-content p {
-        font-size: 18px;
-        margin-top: 1rem;
-    }
+  .banner-content p {
+    font-size: 18px;
+    margin-top: 1rem;
+    margin-bottom: -30px;
+  }
+
+  .btn {
+    visibility: hidden;
+  }
+
+  .me {
+    margin: 0px;
+  }
 }
 
 .mail-icon {
-    margin-left:5px;
+  margin-left: 5px;
 }
- 
+
 .me {
-    margin: 10%;
-    position: relative;
-    width: 80%;
+  margin: 10%;
+  position: relative;
+  width: 80%;
 }
 
 .dark-blue {
-    color: #2855FF;
+  color: #2855ff;
 }
 
 .dark-blue:hover {
-    background-color: #2855FF;
+  background-color: #2855ff;
 }
 
 #main {
-    transition: margin-top .5s;
-}   
+  transition: margin-top 0.5s;
+}
 
-b, strong {font-weight:bold !important;}
+b,
+strong {
+  font-weight: bold !important;
+}
