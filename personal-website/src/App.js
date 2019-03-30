@@ -3,6 +3,7 @@ import './App.scss';
 import "shards-ui/dist/css/shards.min.css"
 import Header from './components/layout/Header';
 import MainPage from './components/layout/MainPage';
+import Experience from './components/layout/Experience';
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <MainPage />
+        <Experience />
         <header className="App-header">
         </header>
       </div>

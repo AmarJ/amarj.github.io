@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './Header.scss'
+import resume from "../../assets/files/Amar_Resume.pdf";
 
 var MobileMenuStyle = {
     height: "0px"
@@ -8,7 +9,7 @@ var MobileMenuStyle = {
 const MobileMenu = (props) => {
     return (
         <div className="nav-menu" style={MobileMenuStyle}>
-            <a href="/">
+            <a href={resume}>
                 <div className="resume-link">
                     View Resume <i className="fas fa-chevron-right"></i>
                 </div>

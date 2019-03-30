@@ -1,0 +1,234 @@
+.experience-wrapper {
+  width: 80.75%;
+  height: calc(100vh - 150px);
+  margin: 0 auto;
+}
+
+.experience-title {
+  text-align: center;
+  font-size: 38px;
+  color: #3c3b48;
+  font-weight: 600;
+  margin-bottom: 10%;
+}
+
+.white-image-shaddow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.005);
+}
+
+.company-microsoft {
+  cursor: pointer;
+  height: 40vh;
+  width: 35vw;
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+.company-shopify {
+  cursor: pointer;
+  height: 40vh;
+  width: 35vw;
+  background-color: #0b1338;
+  position: relative;
+}
+
+.company-morganstanley {
+  cursor: pointer;
+  height: 40vh;
+  width: 35vw;
+  background-color: #002750;
+  position: relative;
+}
+
+.company-nxp {
+  cursor: pointer;
+  height: 40vh;
+  width: 35vw;
+  background-color: white;
+  position: relative;
+}
+
+.company-microsoft:hover .overlay-microsoft {
+  opacity: 1;
+}
+
+.company-shopify:hover .overlay-shopify {
+  opacity: 1;
+}
+
+.company-morganstanley:hover .overlay-morganstanley {
+  opacity: 1;
+}
+
+.company-nxp:hover .overlay-nxp {
+  opacity: 1;
+}
+
+.overlay-microsoft {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #efefef;
+  border-radius: 25px;
+}
+
+.overlay-shopify {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #0b1338;
+  border-radius: 25px;
+}
+
+.overlay-morganstanley {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #002750;
+  border-radius: 25px;
+}
+
+.overlay-nxp {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: white;
+    border-radius: 25px;
+  }
+
+.company-image {
+  width: 60px;
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.company-image-shopify {
+  width: 80px;
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.company-image-morganstanely {
+  width: 200px;
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.company-image-nxp {
+    width: 100px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.company-desc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.company-desc h4 {
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.company-desc h5 {
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+
+.company-desc p {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.text-white h4 {
+  color: white;
+}
+
+.text-white h5 {
+  color: white;
+}
+
+.text-white p {
+  color: rgb(194, 194, 194);
+}
+
+.text-black h4 {
+  color: #3c3b48;
+}
+
+.text-black h5 {
+  color: #3c3b48;
+}
+
+.text-black p {
+  color: rgb(68, 68, 68);
+}
+
+@media (max-width: 767px) {
+  .company-image {
+    display: flex;
+  }
+
+  .company-desc-white {
+    margin-left: 30px !important;
+  }
+
+  .company-desc-white h3 {
+    font-size: 18px;
+  }
+
+  .company-desc-white h5 {
+    font-size: 14px;
+  }
+
+  .company-desc-white p {
+    font-size: 12px;
+  }
+}
+
+.top-margin-5 {
+  margin-top: 5%;
+}

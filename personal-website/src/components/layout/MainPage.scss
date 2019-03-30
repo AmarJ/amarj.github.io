@@ -9,21 +9,28 @@
     color: #3C3B48;
     text-align: left;
     margin-top: 4rem;
+    margin-bottom: 5rem;
     // background: blue;
 }
   
 .banner-content h1 {
-    font-size: 45px;
+    font-size: 42px;
     color: #3C3B48;
     font-weight: 600;
 }
 
 .banner-content p {
     font-size: 22px;
+    color: #3C3B48;
     margin-top: 2rem;
 }
 
 @media (max-width: 800px) {
+    .banner-content {
+        margin: 0px;
+
+    }
+
     .banner-content h1 {
         font-size: 28px;
         color: #3C3B48;
@@ -41,11 +48,21 @@
 }
  
 .me {
-
-    margin-left: 10%;
+    margin: 10%;
+    position: relative;
     width: 80%;
+}
+
+.dark-blue {
+    color: #2855FF;
+}
+
+.dark-blue:hover {
+    background-color: #2855FF;
 }
 
 #main {
     transition: margin-top .5s;
-}
+}   
+
+b, strong {font-weight:bold !important;}

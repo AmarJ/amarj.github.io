@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './MainPage.scss'
-import art from '../../imgs/me.png';
+import art from '../../assets/imgs/me.png';
 
 export default class MainPage extends Component {
     render() {
@@ -8,7 +8,7 @@ export default class MainPage extends Component {
             <div id="main" className="main-wrapper">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col">
+                        <div className="col-lg-6 col-sm-6 col-xs-6">
                             <div className="banner-content">
                                 <h1>
                                     Hello! 👋
@@ -18,10 +18,10 @@ export default class MainPage extends Component {
                                     University of Ottawa</b> and will be working as a software engineering intern at Microsoft
                                     in Vancouver this summer.
 							    </p>
-                                <button type="button" className="btn btn-outline-primary">Send me a message <i className="fas fa-envelope mail-icon"></i></button>
+                                <button type="button" className="btn btn-outline-primary dark-blue">Send me a message <i className="fas fa-envelope mail-icon"></i></button>
                             </div>
                         </div>
-                        <div className="col">
+                        <div className="col-lg-6 col-sm-6 col-xs-6">
                             <img src={art} className='me' alt="loading..." />
                         </div>
                     </div>
