@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import './Header.scss'
+import React, { Component } from 'react';
+import './Header.scss';
 import resume from "../../assets/files/Amar_Resume.pdf";
 
 var MobileMenuStyle = {
