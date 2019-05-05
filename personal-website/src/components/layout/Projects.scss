@@ -18,6 +18,30 @@
   width: 110%;
 }
 
+.logo-img {
+  height: calc(100vh - 290px);
+}
+
+.logo-box {
+  width: 100%;
+  text-align: center;
+}
+
+.cnn-img {
+  margin-top: 135px;
+  margin-left:  50px;
+  width: 100%;
+}
+
+.project-cnn-wrapper {
+  text-align: center;
+}
+
+.more-wrapper{
+  height: 500px;
+  background-color: #202428;
+}
+
 .project-description {
   margin-top: 75px;
   text-align: left;
