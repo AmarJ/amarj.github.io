@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import './MainPage.scss'
+import React, { Component } from 'react';
+import './MainPage.scss';
 import art from '../../assets/imgs/me.png';
 
 export default class MainPage extends Component {

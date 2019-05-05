@@ -7,9 +7,11 @@
     "mdbreact": "^4.11.1",
     "node-sass": "^4.11.0",
     "react": "^16.8.5",
+    "react-bootstrap-carousel": "^3.4.1",
     "react-burger-menu": "^2.6.5",
     "react-dom": "^16.8.5",
     "react-scripts": "2.1.8",
+    "react-slick": "^0.24.0",
     "shards-react": "^1.0.3"
   },
   "scripts": {

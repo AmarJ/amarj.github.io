@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import './Experience.scss'
+import React, { Component } from 'react';
+import './Experience.scss';
 import microsoftLogo from '../../assets/imgs/microsoft.png';
 import shopifyLogo from '../../assets/imgs/shopify.png';
 import morganstanleyLogo from '../../assets/imgs/morganstanley.png';
@@ -60,7 +60,7 @@ export default class Experience extends Component {
                                 <div class="overlay-morganstanley">
                                     <div class="company-desc text-white">
                                         <h4>Morgan Stanley</h4>
-                                        <h5>Technical Analyst Intern</h5>
+                                        <h5>Technology Analyst Intern</h5>
                                         <p>
                                             Jan. 2018 - May 2018<br></br>
                                             Montreal, Canada 
