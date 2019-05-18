@@ -6,6 +6,14 @@ var MobileMenuStyle = {
     height: "0px"
 }
 
+var MobileMenuIcon = {
+    visibikity: false
+}
+
+var MobileCloseIcon = {
+    isHidden: true
+}
+
 const MobileMenu = (props) => {
     return (
         <div className="nav-menu" style={MobileMenuStyle}>
@@ -24,11 +32,19 @@ const MobileMenu = (props) => {
 export default class Header extends Component {
     state = {
         showMobileMenu: false,
+        showButton: true,
     }
 
     clickedMenu = () => {
         this.setState({ showMobileMenu: true });
-        MobileMenuStyle = { height: "100%"}; 
+        MobileMenuStyle = { height: "100%"};
+        this.setState({showButton: false});
+    }
+
+    clickedMenuClose = () => {
+        this.setState({ showMobileMenu: false });
+        MobileMenuStyle = { height: "0px;"}; 
+        this.setState({showButton: true});
     }
 
     render() {
@@ -37,7 +53,7 @@ export default class Header extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col">
-                            <div className="logo">
+                            <div className="logo slide-in-blurred-top">
                                 <span className="full-name">
                                     <h1>Amar Jasarbasic</h1>
                                 </span>
@@ -46,7 +62,7 @@ export default class Header extends Component {
                                 </span>
                             </div>
                         </div>
-                        <div className="col">
+                        <div className="col slide-in-blurred-right">
                             <div className="full-options">
                                 <a href="/">
                                     <div className="resume-link">
@@ -58,7 +74,8 @@ export default class Header extends Component {
                                 <a href="/">About</a>
                             </div>
                             <div className="short-options">
-                                    <i className="fas fa-bars menu-icon" onClick={this.clickedMenu}></i>
+                                    <i className={this.state.showButton ? "fas fa-bars menu-icon" : "fa fa-bars hidden"} onClick={this.clickedMenu} />
+                                    <i className={!this.state.showButton ? "fas fa-times menu-icon" : "fa fa-times hidden"} onClick={this.clickedMenuClose} />
                             </div>
                         </div>
                     </div>
