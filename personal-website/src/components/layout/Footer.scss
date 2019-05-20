@@ -30,8 +30,8 @@
 }
 
 .created-by {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
     margin-top: 40px;
     font-family: 'Roboto Mono', monospace;
     margin-bottom: 70px;
@@ -42,4 +42,37 @@
     background-color: #0b3ffa;
     height: 5px;
     width: 100%;
+}
+
+.mobile-footer {
+    visibility: hidden;
+}
+
+.web-footer {
+    visibility: unset;
+}
+
+@media (max-width: 767px) {
+    .footer-wrapper {
+        margin-top: 400px;
+    }
+
+    .mobile-footer {
+        visibility: unset;
+        align-content: center;
+        padding-left: 27%;
+        // padding-top: -20px;
+    }
+
+    .say-hello {
+        margin-bottom: -60px;
+    }
+
+    .no-underline {
+        font-size: 18px;
+    }
+
+    .web-footer {
+        visibility: hidden;
+    }
 }

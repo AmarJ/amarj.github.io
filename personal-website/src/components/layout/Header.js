@@ -58,7 +58,7 @@ export default class Header extends Component {
                                     <h1>Amar Jasarbasic</h1>
                                 </span>
                                 <span className="short-name">
-                                    <h1>AJ</h1>
+                                    <h1>Amar</h1>
                                 </span>
                             </div>
                         </div>
