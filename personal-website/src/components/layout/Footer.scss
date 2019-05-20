@@ -1,0 +1,45 @@
+.say-hello {
+    align-content: center;
+}
+
+.say-hello h1 {
+    font-weight: bold;
+    font-size: 24px;
+    color: #4e4d5a;
+}
+
+.footer-wrapper {
+    align-content: center;
+    margin-top: 50px;
+}
+
+
+.social {
+    margin-top: 25px;
+    width: 70%;
+    height: 40%;
+    font-size: 17px;
+}
+
+.no-underline {
+    text-decoration: none !important;
+}
+
+.social-icon {
+    margin-right: 10px !important;
+}
+
+.created-by {
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 40px;
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 70px;
+    font-size: 13px;
+}
+
+.blue-line {
+    background-color: #0b3ffa;
+    height: 5px;
+    width: 100%;
+}
