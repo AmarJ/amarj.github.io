@@ -143,13 +143,6 @@ export default class Projects extends Component {
                         </div>
                     </div>
                 </div>
-
-                <div className="more-wrapper">
-                    {/* <button type="button" class="btn btn-outline-primary">
-                        More Projects
-                    </button> */}
-                </div>
-
             </div>
         )
     }
