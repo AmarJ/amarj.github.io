@@ -30,11 +30,11 @@ export default class Projects extends Component {
                     </div>
                 </div>
                 <div className="project-section">
-                    <div className="row">
-                        <div className="col-sm-6">
+                    <div id="flex-1" className="row">
+                        <div id="a" className="col-sm-6">
                             <img src={talentboard} className='talentboard-gif' alt="loading..." />
                         </div>
-                        <div className="col-sm-6 project-description">
+                        <div id="b" className="col-sm-6 project-description">
                             <div className="project-type">
                                 Web app
                             </div>
@@ -42,7 +42,7 @@ export default class Projects extends Component {
                                 Talentboard
                             </div>
                             <div className="row">
-                                <div className="col-3">
+                                <div className="col-3 not-mobile">
                                     <hr />
                                 </div>
                                 <div className="col-7">
@@ -62,14 +62,26 @@ export default class Projects extends Component {
                                 </div>
                             </div>
                         </div>
+                        <div id="c" className="col-sm-6">
+                            <a href="https://github.com/TalentBoard/Talentboard">
+                                <button type="button" className="btn btn-dark mobile-buttons">
+                                    Github <i className="fab fa-github github-icon"></i>
+                                </button>
+                            </a>
+                            <a href="https://talentboard-app.herokuapp.com/login">
+                                <button type="button" className="btn btn-light button-2 mobile-buttons" href="https://github.com/TalentBoard/Talentboard">
+                                    Live Demo
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <div className="project-section">
-                    <div className="row">
-                        <div className="col-sm-6 project-description">
+                    <div id="flex-2" className="row">
+                        <div id="a" className="col-sm-6 project-description">
                             <div className="project-type">
-                                Open Source - Computer Vision
+                                Open Source
                             </div>
                             <div className="project-name">
                                 Logo detection (Darknet)
@@ -86,12 +98,12 @@ export default class Projects extends Component {
                                         <button type="button" className="btn btn-dark">
                                             Github <i className="fab fa-github github-icon"></i>
                                         </button>
-                                    </a>                                
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="col-sm-6 logo-box">
+                        <div id="b" className="col-sm-6 logo-box">
                             <Slider {...settings}>
                                 <div className='logo-img'>
                                     <img src={logoproject_1} alt="loading..." />
@@ -110,15 +122,25 @@ export default class Projects extends Component {
                                 </div>
                             </Slider>
                         </div>
+
+                        <div id="c" className="col-sm-6">
+                            <a href="https://github.com/AmarJ/darknet-NN-framework">
+                                <button type="button" className="btn btn-dark mobile-buttons">
+                                    Github <i className="fab fa-github github-icon"></i>
+                                </button>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
 
-                <div className="project-section">
-                    <div className="row">
-                        <div className="col-sm-6 project-cnn-wrapper">
+                <div className="project-section third">
+                    <div id="flex-3" className="row">
+                        <div id="a" className="col-sm-6 project-cnn-wrapper">
                             <img src={cnn} className='cnn-img' alt="loading..." />
                         </div>
-                        <div className="col-sm-6 project-description">
+                        
+                        <div id="b" className="col-sm-6 project-description">
                             <div className="project-type">
                                 Computer Vision
                             </div>
@@ -140,6 +162,14 @@ export default class Projects extends Component {
                                     </a>
                                 </div>
                             </div>
+                        </div>
+
+                        <div id="c" className="col-sm-6">
+                            <a href="https://github.com/AmarJ/CNN">
+                                <button type="button" className="btn btn-dark mobile-buttons">
+                                    Github <i className="fab fa-github github-icon"></i>
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>

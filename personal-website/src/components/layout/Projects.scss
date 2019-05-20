@@ -12,10 +12,12 @@
 
 .project-section {
   height: calc(100vh - 150px);
+  width: 100%;
 }
 
 .talentboard-gif {
-  width: 110%;
+  width: 100%;
+  margin-left: 30px;
 }
 
 .logo-img {
@@ -29,17 +31,12 @@
 
 .cnn-img {
   margin-top: 135px;
-  margin-left:  50px;
+  margin-left: 50px;
   width: 100%;
 }
 
 .project-cnn-wrapper {
   text-align: center;
-}
-
-.more-wrapper{
-  height: 500px;
-  background-color: #202428;
 }
 
 .project-description {
@@ -48,8 +45,8 @@
 }
 
 .project-description p {
-    font-size: 16px;
-    color: #4e4d5a;
+  font-size: 16px;
+  color: #4e4d5a;
 }
 
 .project-type {
@@ -67,7 +64,7 @@
 }
 
 .github-icon {
-  margin-left: 10px; 
+  margin-left: 10px;
 }
 
 .button-2 {
@@ -75,7 +72,115 @@
 }
 
 hr {
-    border-top: 5px solid #2855ff;
-    margin-left: 100px;
+  border-top: 5px solid #2855ff;
+  margin-left: 100px;
 }
 
+.mobile-buttons {
+  visibility: hidden;
+}
+
+@media (max-width: 767px) {
+  .projects-wrapper {
+    margin-top: 100px;
+  }
+
+  .talentboard-gif {
+    width: 80%;
+    margin: 0px;
+  }
+
+  .not-mobile {
+    visibility: hidden !important;
+    width: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  hr {
+    visibility: collapse !important;
+  }
+
+  .project-description p {
+    margin-left: -28px;
+  }
+
+  #flex-1 {
+    display: flex;
+    /* Optional, if you want the DIVs 100% width: */
+    flex-direction: column;
+  }
+
+  #flex-1 > #a {
+    order: 2;
+    margin-top: -15px;
+  }
+  #flex-1 > #b {
+    order: 1;
+    margin-top: 0px;
+  }
+  #flex-1 > #c {
+    order: 3;
+    margin-top: 40px;
+    margin-bottom: 500px;
+  }
+
+  #flex-2 {
+    display: flex;
+    /* Optional, if you want the DIVs 100% width: */
+    flex-direction: column;
+  }
+
+  #flex-2 > #a {
+    order: 1;
+    margin-top: 150px;
+  }
+  #flex-2 > #b {
+    order: 2;
+    width: 100%;
+    padding: 10%;
+    margin-top: -65px;
+    margin-bottom: 10px; 
+  }
+  #flex-2 > #c {
+    order: 3;
+    margin-top: -10px;
+  }
+
+  #flex-3 {
+    display: flex;
+    /* Optional, if you want the DIVs 100% width: */
+    flex-direction: column;
+  }
+
+  #flex-3 > #a {
+    order: 2;
+    margin-top: -170px;
+    width: 85%;
+  }
+  #flex-3> #b {
+    order: 1;
+    // width: 100%;
+    // padding: 10%;
+    margin-top: 120px;
+    // margin-bottom: 10px; 
+  }
+  #flex-3 > #c {
+    order: 3;
+    margin-top: 20px;
+  }
+
+  .mobile-buttons{
+    visibility: unset;
+    margin-top: 10px;
+  }
+
+  .third {
+    margin-top: 110%;
+  }
+
+  .project-description {
+    padding-right: 30px;
+  }
+
+}
