@@ -83,9 +83,7 @@ export default class Footer extends Component {
                     I built this site using <b>Javascript</b> and <b>React.</b> You can find the source code <a href="https://github.com/AmarJ/amarj.github.io">here</a> ❤
                 </div>
 
-                <div className="blue-line">
-
-                </div>
+                <div className="blue-line" />
 
             </div >
 

@@ -80,7 +80,19 @@ hr {
   visibility: hidden;
 }
 
+.blue-line {
+  visibility: hidden;
+}
+
 @media (max-width: 767px) {
+  .blue-line {
+    visibility: visible;
+    background-color: #0b3ffa;
+    height: 5px;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
   .projects-wrapper {
     margin-top: 100px;
   }
@@ -101,8 +113,32 @@ hr {
     visibility: collapse !important;
   }
 
+  .row {
+    padding: 0px !important;
+  }
+
+  .logo-box {
+    visibility: hidden;
+  }
+  
+  .col-sm-6 {
+    padding-right: 0px !important;
+  }
+
   .project-description p {
-    margin-left: -28px;
+    margin-left: 0px;
+  }
+
+  .project-type {
+    margin-left: 10px;
+  }
+
+  .project-name {
+    font-size: 35px;
+    text-align: center;
+    margin-left: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   #flex-1 {
@@ -138,9 +174,9 @@ hr {
   #flex-2 > #b {
     order: 2;
     width: 100%;
-    padding: 10%;
+    padding: 0%;
     margin-top: -65px;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
   }
   #flex-2 > #c {
     order: 3;
@@ -158,19 +194,19 @@ hr {
     margin-top: -170px;
     width: 85%;
   }
-  #flex-3> #b {
+  #flex-3 > #b {
     order: 1;
     // width: 100%;
     // padding: 10%;
     margin-top: 120px;
-    // margin-bottom: 10px; 
+    // margin-bottom: 10px;
   }
   #flex-3 > #c {
     order: 3;
     margin-top: 20px;
   }
 
-  .mobile-buttons{
+  .mobile-buttons {
     visibility: unset;
     margin-top: 10px;
   }
@@ -178,9 +214,4 @@ hr {
   .third {
     margin-top: 110%;
   }
-
-  .project-description {
-    padding-right: 30px;
-  }
-
 }

@@ -16,8 +16,8 @@ class App extends Component {
         <Loader />
         <Header />
         <MainPage />
-        <Experience />
-        <Projects />
+        <Experience /> 
+        {/* <Projects /> */}
         <Footer />
         {/* <header className="App-header">
         </header> */}
