@@ -11,7 +11,7 @@ export default class MainPage extends Component {
                         <div className="col-lg-6 col-sm-6 col-xs-6">
                             <div className="banner-content slide-in-blurred-left">
                                 <h1>
-                                    Hello! 👋
+                                    Hello! <span role="img" aria-label="Hand">👋</span>
                                 </h1>
                                 <p>
                                     My name is <b>Amar Jasarbasic</b> and I am a software engineer based in Ottawa, Canada. I am a <b>4th year student at the

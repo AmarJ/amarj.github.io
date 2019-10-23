@@ -25,7 +25,7 @@ export default class Projects extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col projects-title">
-                            Projects
+                                Projects
                         </div>
                     </div>
                 </div>
@@ -139,7 +139,7 @@ export default class Projects extends Component {
                         <div id="a" className="col-sm-6 project-cnn-wrapper">
                             <img src={cnn} className='cnn-img' alt="loading..." />
                         </div>
-                        
+
                         <div id="b" className="col-sm-6 project-description">
                             <div className="project-type">
                                 Computer Vision

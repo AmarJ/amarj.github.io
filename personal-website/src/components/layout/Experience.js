@@ -21,10 +21,10 @@ export default class Experience extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
-                            <div class="card company-microsoft">
+                            <div className="card company-microsoft">
                                 <img src={microsoftLogo} alt="Microsoft" className="company-image" />
-                                <div class="overlay-microsoft">
-                                    <div class="company-desc text-black">
+                                <div className="overlay-microsoft">
+                                    <div className="company-desc text-black">
                                         <h4>Microsoft</h4>
                                         <h5>Software Engineering Intern</h5>
                                         <p>
@@ -37,10 +37,10 @@ export default class Experience extends Component {
                             </div>
                         </div>
                         <div className="col-md-6">
-                            <div class="card company-shopify">
+                            <div className="card company-shopify">
                                 <img src={shopifyLogo} alt="Shopify" className="company-image-shopify" />
-                                <div class="overlay-shopify">
-                                    <div class="company-desc text-white">
+                                <div className="overlay-shopify">
+                                    <div className="company-desc text-white">
                                         <h4>Shopify</h4>
                                         <h5>Data Engineering Intern</h5>
                                         <p>
@@ -55,10 +55,10 @@ export default class Experience extends Component {
 
                     <div className="row top-margin-5">
                         <div className="col-md-6">
-                            <div class="card company-morganstanley">
+                            <div className="card company-morganstanley">
                                 <img src={morganstanleyLogo} alt="MorganStanley" className="company-image-morganstanely" />
-                                <div class="overlay-morganstanley">
-                                    <div class="company-desc text-white">
+                                <div className="overlay-morganstanley">
+                                    <div className="company-desc text-white">
                                         <h4>Morgan Stanley</h4>
                                         <h5>Technology Analyst Intern</h5>
                                         <p>
@@ -70,10 +70,10 @@ export default class Experience extends Component {
                             </div>
                         </div>
                         <div className="col-md-6">
-                            <div class="card company-nxp">
+                            <div className="card company-nxp">
                                 <img src={nxpLogo} alt="NXP" className="company-image-nxp" />
-                                <div class="overlay-nxp">
-                                    <div class="company-desc text-black">
+                                <div className="overlay-nxp">
+                                    <div className="company-desc text-black">
                                         <h4>NXP Semiconductors</h4>
                                         <h5>Verification Engineering Intern</h5>
                                         <p>

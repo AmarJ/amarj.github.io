@@ -11,6 +11,7 @@
     "react-burger-menu": "^2.6.5",
     "react-dom": "^16.8.5",
     "react-scripts": "2.1.8",
+    "react-scrollable-anchor": "^0.6.1",
     "react-slick": "^0.24.0",
     "rxjs": "^6.5.2",
     "shards-react": "^1.0.3"

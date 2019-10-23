@@ -11,34 +11,33 @@ export default class Footer extends Component {
                     </h1>
                 </div>
 
-
                 <div className="container">
                     <div className="web-footer">
-                        <div classname="row">
+                        <div className="row">
                             <div className="col-md-6 offset-md-3 social">
-                                <div class="container">
-                                    <div class="row justify-content-md-center">
+                                <div className="container">
+                                    <div className="row justify-content-md-center">
                                         <a className="no-underline" href="https://www.instagram.com/amar_jasar/">
-                                            <div class="col-md-auto name">
-                                                <i class="fab fa-instagram social-icon"></i>
+                                            <div className="col-md-auto name">
+                                                <i className="fab fa-instagram social-icon"></i>
                                                 Intagram
                                             </div>
                                         </a>
                                         <a className="no-underline" href="https://www.linkedin.com/in/amarjasarbasic/">
-                                            <div class="col-md-auto name">
-                                                <i class="fab fa-linkedin social-icon"></i>
+                                            <div className="col-md-auto name">
+                                                <i className="fab fa-linkedin social-icon"></i>
                                                 LinkedIn
                                             </div>
                                         </a>
                                         <a className="no-underline " href="https://github.com/AmarJ">
-                                            <div class="col-md-auto name">
-                                                <i class="fab fa-github social-icon"></i>
+                                            <div className="col-md-auto name">
+                                                <i className="fab fa-github social-icon"></i>
                                                 Github
                                             </div>
                                         </a>
-                                        <a className="no-underline in-line" href="mailto:amarjasarbasic@email.com">
-                                            <div class="col-md-auto name">
-                                                <i class="far fa-envelope social-icon"></i>
+                                        <a className="no-underline in-line" href="mailto:amarjasarbasic@gmail.com">
+                                            <div className="col-md-auto name">
+                                                <i className="far fa-envelope social-icon"></i>
                                                 Email
                                             </div>
                                         </a>
@@ -48,28 +47,28 @@ export default class Footer extends Component {
                         </div>
                     </div>
                     <div className="mobile-footer">
-                        <div class="row">
+                        <div className="row">
                             <div className="col-md-6 offset-md-3 social">
-                                <div class="container">
-                                    <div class="row justify-content-md-center">
+                                <div className="container">
+                                    <div className="row justify-content-md-center">
                                         <a className="no-underline" href="https://www.instagram.com/amar_jasar/">
-                                            <div class="col-md-auto name">
-                                                <i class="fab fa-instagram social-icon"></i>
+                                            <div className="col-md-auto name">
+                                                <i className="fab fa-instagram social-icon"></i>
                                             </div>
                                         </a>
                                         <a className="no-underline" href="https://www.linkedin.com/in/amarjasarbasic/">
-                                            <div class="col-md-auto name">
-                                                <i class="fab fa-linkedin social-icon"></i>
+                                            <div className="col-md-auto name">
+                                                <i className="fab fa-linkedin social-icon"></i>
                                             </div>
                                         </a>
                                         <a className="no-underline " href="https://github.com/AmarJ">
-                                            <div class="col-md-auto name">
-                                                <i class="fab fa-github social-icon"></i>
+                                            <div className="col-md-auto name">
+                                                <i className="fab fa-github social-icon"></i>
                                             </div>
                                         </a>
                                         <a className="no-underline" href="mailto:amarjasarbasic@email.com">
-                                            <div class="col-md-auto name">
-                                                <i class="far fa-envelope social-icon"></i>
+                                            <div className="col-md-auto name">
+                                                <i className="far fa-envelope social-icon"></i>
                                             </div>
                                         </a>
                                     </div>
