@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Header.scss';
-import resume from "../../assets/files/Amar_Resume.pdf";
+import resume from "../../assets/files/Amar_CV_Fall.pdf";
 
 var MobileMenuStyle = {
     height: "0px"
