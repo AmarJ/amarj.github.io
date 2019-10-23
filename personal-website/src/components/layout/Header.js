@@ -6,13 +6,13 @@ var MobileMenuStyle = {
     height: "0px"
 }
 
-var MobileMenuIcon = {
-    visibikity: false
-}
+// var MobileMenuIcon = {
+//     visibility: false
+// }
 
-var MobileCloseIcon = {
-    isHidden: true
-}
+// var MobileCloseIcon = {
+//     isHidden: true
+// }
 
 const MobileMenu = (props) => {
     return (
@@ -22,11 +22,14 @@ const MobileMenu = (props) => {
                     View Resume <i className="fas fa-chevron-right"></i>
                 </div>
             </a>
-            <a href="/">Projects</a>
-            <a href="/">Experience</a>
-            <a href="/">About</a>
+            <Anchors />
         </div>
     );
+}
+
+const Anchors = () => {
+    const anchorsArr = ["Project", "Experience", "About"];
+    return (anchorsArr.map(item => { return (<a key={item} href={`#${item}`}>{item}</a>) }));
 }
 
 export default class Header extends Component {
@@ -37,17 +40,18 @@ export default class Header extends Component {
 
     clickedMenu = () => {
         this.setState({ showMobileMenu: true });
-        MobileMenuStyle = { height: "100%"};
-        this.setState({showButton: false});
+        MobileMenuStyle = { height: "100%" };
+        this.setState({ showButton: false });
     }
 
     clickedMenuClose = () => {
         this.setState({ showMobileMenu: false });
-        MobileMenuStyle = { height: "0px;"}; 
-        this.setState({showButton: true});
+        MobileMenuStyle = { height: "0px;" };
+        this.setState({ showButton: true });
     }
 
     render() {
+
         return (
             <div className="nav-bar">
                 <div className="container">
@@ -64,18 +68,16 @@ export default class Header extends Component {
                         </div>
                         <div className="col slide-in-blurred-right">
                             <div className="full-options">
-                                <a href="/">
+                                <a href={resume}>
                                     <div className="resume-link">
                                         View Resume <i className="fas fa-chevron-right"></i>
                                     </div>
                                 </a>
-                                <a href="/">Projects</a>
-                                <a href="/">Experience</a>
-                                <a href="/">About</a>
+                                <Anchors />
                             </div>
                             <div className="short-options">
-                                    <i className={this.state.showButton ? "fas fa-bars menu-icon" : "fa fa-bars hidden"} onClick={this.clickedMenu} />
-                                    <i className={!this.state.showButton ? "fas fa-times menu-icon" : "fa fa-times hidden"} onClick={this.clickedMenuClose} />
+                                <i className={this.state.showButton ? "fas fa-bars menu-icon" : "fa fa-bars hidden"} onClick={this.clickedMenu} />
+                                <i className={!this.state.showButton ? "fas fa-times menu-icon" : "fa fa-times hidden"} onClick={this.clickedMenuClose} />
                             </div>
                         </div>
                     </div>
