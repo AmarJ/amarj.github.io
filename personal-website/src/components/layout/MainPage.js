@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './MainPage.scss';
-import art from '../../assets/imgs/me.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import art from '../../images/me.png';
 
 export default class MainPage extends Component {
     render() {
@@ -18,7 +20,7 @@ export default class MainPage extends Component {
                                     University of Ottawa</b> and am currently interning as a software engineering at Microsoft
                                     in Vancouver.
 							    </p>
-                                <button type="button" className="btn btn-outline-primary dark-blue">Send me a message <i className="fas fa-envelope mail-icon"></i></button>
+                                <button type="button" className="btn btn-outline-primary dark-blue">Send me a message <FontAwesomeIcon icon={faEnvelope} className="mail-icon"></FontAwesomeIcon></button>
                             </div>
                         </div>
                         <div className="col-lg-6 col-sm-6 col-xs-6 slide-in-blurred-bottom ">

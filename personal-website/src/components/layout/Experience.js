@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './Experience.scss';
-import microsoftLogo from '../../assets/imgs/microsoft.png';
-import shopifyLogo from '../../assets/imgs/shopify.png';
-import morganstanleyLogo from '../../assets/imgs/morganstanley.png';
-import nxpLogo from '../../assets/imgs/nxp.png';
+import microsoftLogo from '../../images/microsoft.png';
+import shopifyLogo from '../../images/shopify.png';
+import morganstanleyLogo from '../../images/morganstanley.png';
+import nxpLogo from '../../images/nxp.png';
 
 export default class Experience extends Component {
     render() {

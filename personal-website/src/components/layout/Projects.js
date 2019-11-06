@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import './Projects.scss';
-import talentboard from '../../assets/imgs/talentboard.gif';
+import talentboard from '../../images/talentboard.gif';
 import Slider from "react-slick";
-import logoproject_1 from '../../assets/imgs/logoproject-1.png';
-import logoproject_2 from '../../assets/imgs/logoproject-2.png';
-import logoproject_3 from '../../assets/imgs/logoproject-3.png';
-import logoproject_4 from '../../assets/imgs/logoproject-4.png';
-import logoproject_5 from '../../assets/imgs/logoproject-5.png';
-import cnn from '../../assets/imgs/cnn.png';
+import logoproject_1 from "../../images/logoproject-1.png";
+import logoproject_2 from '../../images/logoproject-2.png';
+import logoproject_3 from '../../images/logoproject-3.png';
+import logoproject_4 from '../../images/logoproject-4.png';
+import logoproject_5 from '../../images/logoproject-5.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import cnn from '../../images/cnn.png';
 
 export default class Projects extends Component {
     render() {
@@ -25,7 +27,7 @@ export default class Projects extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col projects-title">
-                                Projects
+                            Projects
                         </div>
                     </div>
                 </div>
@@ -51,7 +53,7 @@ export default class Projects extends Component {
                                     </p>
                                     <a href="https://github.com/TalentBoard/Talentboard">
                                         <button type="button" className="btn btn-dark">
-                                            Github <i className="fab fa-github github-icon"></i>
+                                            Github <FontAwesomeIcon icon={faGithub} className="github-icon"></FontAwesomeIcon>
                                         </button>
                                     </a>
                                     <a href="https://talentboard-app.herokuapp.com/login">
@@ -65,7 +67,7 @@ export default class Projects extends Component {
                         <div id="c" className="col-sm-6">
                             <a href="https://github.com/TalentBoard/Talentboard">
                                 <button type="button" className="btn btn-dark mobile-buttons">
-                                    Github <i className="fab fa-github github-icon"></i>
+                                    Github <FontAwesomeIcon icon={faGithub} className="github-icon"></FontAwesomeIcon>
                                 </button>
                             </a>
                             <a href="https://talentboard-app.herokuapp.com/login">
@@ -96,7 +98,7 @@ export default class Projects extends Component {
                                     </p>
                                     <a href="https://github.com/AmarJ/darknet-NN-framework">
                                         <button type="button" className="btn btn-dark">
-                                            Github <i className="fab fa-github github-icon"></i>
+                                            Github <FontAwesomeIcon icon={faGithub} className="github-icon"></FontAwesomeIcon>
                                         </button>
                                     </a>
                                 </div>
@@ -104,29 +106,15 @@ export default class Projects extends Component {
                         </div>
 
                         <div id="b" className="col-sm-6 logo-box">
-                            <Slider {...settings}>
-                                <div className='logo-img'>
-                                    <img src={logoproject_1} alt="loading..." />
-                                </div>
-                                <div className='logo-img'>
-                                    <img src={logoproject_2} alt="loading..." />
-                                </div>
-                                <div className='logo-img'>
-                                    <img src={logoproject_3} alt="loading..." />
-                                </div>
-                                <div className='logo-img'>
-                                    <img src={logoproject_4} alt="loading..." />
-                                </div>
-                                <div className='logo-img'>
-                                    <img src={logoproject_5} alt="loading..." />
-                                </div>
-                            </Slider>
+                            <div className='logo-img'>
+                                <img src={logoproject_2} alt="loading..." />
+                            </div>
                         </div>
 
                         <div id="c" className="col-sm-6">
                             <a href="https://github.com/AmarJ/darknet-NN-framework">
                                 <button type="button" className="btn btn-dark mobile-buttons">
-                                    Github <i className="fab fa-github github-icon"></i>
+                                    Github <FontAwesomeIcon icon={faGithub} className="github-icon"></FontAwesomeIcon>
                                 </button>
                             </a>
                         </div>
@@ -157,7 +145,7 @@ export default class Projects extends Component {
                                     </p>
                                     <a href="https://github.com/AmarJ/CNN">
                                         <button type="button" className="btn btn-dark">
-                                            Github <i className="fab fa-github github-icon"></i>
+                                            Github <FontAwesomeIcon icon={faGithub} className="github-icon"></FontAwesomeIcon>
                                         </button>
                                     </a>
                                 </div>
