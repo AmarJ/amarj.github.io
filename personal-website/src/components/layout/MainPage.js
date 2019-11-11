@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 import './MainPage.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { config } from '@fortawesome/fontawesome-svg-core'
 import art from '../../images/me.png';
-
-config.autoAddCss = false;
 
 export default class MainPage extends Component {
     render() {

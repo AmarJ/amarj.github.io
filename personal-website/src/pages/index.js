@@ -1,18 +1,19 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import 'bootstrap/dist/css/bootstrap.css';
 import "shards-ui/dist/css/shards.min.css"
 
 import './index.scss';
+import { graphql } from 'gatsby';
 import Header from '../components/layout/Header';
 import MainPage from '../components/layout/MainPage';
 import Experience from '../components/layout/Experience';
 import Projects from '../components/layout/Projects';
 import Loader from "../components/loader/Loader";
 import Footer from '../components/layout/Footer';
-import ScrollableAnchor from 'react-scrollable-anchor';
+import Jobs from "../components/layout/Jobs";
 
+import PropTypes from 'prop-types';
 
 // const Sections = () => {
 //   const anchors = ['About', 'Experience', 'Project'];
@@ -21,15 +22,43 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 // }
 
 
-const IndexPage = () => (
+const IndexPage = ({ location, data }) => (
   <div className="App">
         <Loader />
         <Header />
         <MainPage />
+        <Jobs data={data.jobs.edges} />
         <Experience />
         <Projects />
         <Footer />
   </div>
 )
 
+IndexPage.propTypes = {
+  location: PropTypes.object.isRequired,
+  data: PropTypes.object.isRequired,
+};
+
 export default IndexPage
+
+export const pageQuery = graphql`
+  {
+    jobs: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/jobs/" } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+     edges {
+        node {
+          frontmatter {
+            title
+            company
+            location
+            range
+            url
+          }
+          html
+        }
+      }
+    }
+  }
+`;
